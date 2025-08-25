@@ -1,0 +1,62 @@
+
+.env
+.env.local
+.env.production
+.env.staging
+.env.development
+.env.test
+
+# AWS credentials
+.aws/
+aws-credentials.json
+credentials.csv
+
+# Google Cloud Platform credentials
+*.json
+!requirements.json
+!package.json
+gcp-*.json
+service-account*.json
+*-service-account.json
+gcp-credentials.json
+google-credentials.json
+key.json
+keys/
+credentials/
+
+# SSH keys
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# API keys and tokens
+.secrets
+secrets.txt
+api-keys.txt
+tokens.txt
+=
+
+# Environments
+.env
+.venv
+
+
+# Allow specific configuration templates
+!.env.example
+!docker-compose.yml
+!docker-compose.prod.yml
+!Dockerfile
+!requirements.txt
+!README.md
+
+# Allow documentation images
+!docs/images/*.png
+!docs/images/*.jpg
+!docs/images/*.gif
+!docs/images/*.svg
+
+# Allow CI/CD configs
+!.github/
+!.gitlab-ci.yml
+!.circleci/
